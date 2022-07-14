@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "img": "./sneakers/air-force.jpg",
+      "brand": "Nike",
+      "shoeType": "Sneaker",
+      "title": "Air Force 1 High Crater",
+      "price": 17490
+    },
+    {
+      "id": 2,
+      "img": "./sneakers/air-mada.jpg",
+      "brand": "Nike",
+      "shoeType": "Sneaker",
+      "title": "ACG Air Mada",
+      "price": 13690
+    },
+    {
+      "id": 3,
+      "img": "./sneakers/air-mowabb.jpg",
+      "brand": "Nike",
+      "shoeType": "Sneaker",
+      "title": "ACG Air Mowabb",
+      "price": 15690
+    },
+    {
+      "id": 4,
+      "img": "./sneakers/jogger.jpg",
+      "brand": "Adidas original",
+      "shoeType": "Sneaker",
+      "title": "Nite Jogger Winterized",
+      "price": 14990
+    },
+    {
+      "id": 5,
+      "img": "./sneakers/ozrah.jpg",
+      "brand": "Adidas original",
+      "shoeType": "Sneaker",
+      "title": "Ozrah",
+      "price": 12790
+    },
+    {
+      "id": 6,
+      "img": "./sneakers/ozzelia.jpg",
+      "brand": "Adidas original",
+      "shoeType": "Sneaker",
+      "title": "Ozelia",
+      "price": 10490
+    }
+  ]

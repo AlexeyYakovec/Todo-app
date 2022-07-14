@@ -1,0 +1,17 @@
+@import './reset';
+
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './typography';
+
+//components
+@import './components/Todo';
+@import './components/buttonsInputs';
+
+.container {
+    margin: 0 auto;
+    padding: 0 $container-offset;
+   max-width: $content-width;
+   height: 100%;
+}

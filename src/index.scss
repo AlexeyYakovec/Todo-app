@@ -1,0 +1,14 @@
+@import './style/main.scss';
+
+body {
+    overflow:hidden;
+overflow-y:hidden;  /*для вертикального*/
+overflow-x:hidden;  /*для горизонтального*/
+}
+.App {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: 100vh;
+}

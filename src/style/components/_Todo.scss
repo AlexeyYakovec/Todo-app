@@ -1,0 +1,170 @@
+.Todo {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(221, 221, 221);
+   
+    display: flex;
+    overflow: hidden;
+}
+
+// aside 
+.sidebar{
+    width: 25%;
+    background-color: transparent;
+    border-right: 1px solid rgb(71, 71, 71);
+    padding-right: 12px;
+    font-size: $font-size-body;
+    padding: 57px 28px;
+
+    // desc
+    &-desc{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        background-color: transparent;
+        &:active{
+            opacity: 0.6;
+        }
+        svg{
+            margin-right: 12px;
+        }
+    }
+
+    // tasks
+    &-tasks{
+        height: 270px;
+        overflow: auto;
+        .sidebar-task{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:not(:last-child){
+                margin-bottom: 12px;
+            }
+            svg{
+                margin-right: 18px;
+            }
+        }
+    }
+
+    // Add a folder
+    .sidebar-btn{
+        position: relative;
+
+        .add-folderModal{
+            width: 235px;
+            height: 148px;
+            background-color: transparent;
+            margin-top: 36px;
+            border-radius: 10px;
+            padding: 18px 18px 34px 18px;
+            border: 0.5px solid rgb(61, 57, 57);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            .close-icon{
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                border: 1px solid black;
+                border-radius: 50%;
+                cursor: pointer;
+                background-color: rgb(221, 221, 221);
+            }
+            &-form {
+                display: block;
+                input {
+                    padding: 8px 18px;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    margin-bottom: 26px;
+                }
+                .form-btn{
+                    padding: 8px 18px;
+                    border-radius: 10px;
+                    background-color: cadetblue;
+                    position: relative;
+                    
+                }
+            }
+        }
+
+        .sidebar-add-folder{
+            line-height: 17px;
+            letter-spacing: 0.15px;
+            color: #767676;
+            border: 0.5px solid rgb(61, 57, 57);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 8px 66px 8px 14px;
+            margin-top: 36px;
+            &:active{
+                opacity: 0.6;
+            }
+            svg{
+                margin-right: 18px;          
+            }
+        }
+    }
+
+}
+
+//section
+.section{
+    flex: 1 auto;
+    padding: 57px 28px;
+}
+.section-btn{
+    padding: 8px 36px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(63, 61, 61);
+    border-radius: 10px;
+    svg{
+        margin-right: 16px;
+    }
+}
+
+.section-form {
+    display: inline-flex;
+    flex-direction: column;
+    input {
+        width: 482px;
+        margin-bottom: 16px;
+    }
+    button {
+        &:last-child{
+            margin-left: 16px
+        }
+    }
+}
+
+// folder
+.folder{
+
+    &-title{
+        margin-bottom: 36px;
+    }
+    &-list{
+        height: 280px;
+        overflow: auto;
+        margin-bottom: 36px;
+        background-color: white;
+        padding: 8px;
+        border-radius: 15px;
+        &-item{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            &:not(:last-child){
+                margin-bottom: 16px;
+            }
+            svg{
+                margin-right: 16px;
+            }
+        }
+    }
+}
