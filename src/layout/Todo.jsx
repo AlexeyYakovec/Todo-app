@@ -4,6 +4,7 @@ import Section from '../components/Section'
 
 const Todo = () => {
   const [all, setAll] = React.useState([]) // массив элементов в All tasks
+  console.log(`all: ${all}`)
   const [folder, setFolder] = React.useState('') // значение input
   const [status, setStatus] = React.useState('all') // при нажатии на задачу All tasks меняет состояние на его title
 
